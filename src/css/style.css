@@ -305,5 +305,20 @@ flex-direction: column;
 	margin-right: 16px;
 }
 .contact_item_brief{
-	
+	background: linear-gradient(270deg, rgba(255, 255, 255, 0.89) 0%, rgba(255, 255, 255, 0.74) 100%);
+	border-radius: 5px;
+	width: 445px;
+	height: 417px;
+	margin-left: 125px;
+}
+.brief_text{
+	font-family: 'Consolas';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 29px;
+	margin: 30px 33px 106px 33px;
+
+	color: #000000;
+
 }
