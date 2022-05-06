@@ -37,6 +37,9 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: Roboto,sans-serif;
 }
@@ -70,9 +73,10 @@ header li a{
 	margin: 40px 0px 0px 736px ;
 	
 }
-.home {
+.menu_item_home {
 	font-weight: 400;
 }
+
 div.underline{
 	width: 66px;
 	height: 0px;
@@ -105,27 +109,33 @@ p.subtitle{
 	line-height: 35px;
 	margin-top: 50px;
 }
-div.contactbtn{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 0px;
-	width: 220px;
-	height: 50px;
-	left: calc(50% - 220px/2 - 445px);
-	top: calc(50% - 50px/2 - 17px);
-	
-	background: linear-gradient(90deg, #181818 0%, #090909 100%);
-	box-shadow: -7px 7px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
-	margin-top: 50px;
-}
 a.contactbtn{
 	color: white;
 	font-size: 30px;
 	line-height: 35px;
 	text-align: center;
+	
+	display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+		width: 220px;
+		height: 50px;
+		left: calc(50% - 220px/2 - 445px);
+		top: calc(50% - 50px/2 - 17px);
+	
+		background: linear-gradient(90deg, #181818 0%, #090909 100%);
+		box-shadow: -7px 7px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+		margin-top: 50px;
+}
+a.contactbtn:hover{
+	box-shadow: none;
+	position:relative;
+	left: -7px;
+	bottom: -1px;
+	transition: left 0.1s,bottom 0.1s;
 }
 div.cards{
 	margin-top: 174px;
@@ -291,6 +301,10 @@ flex-direction: column;
 	justify-content: right;
 	align-items: center;
 }
+.input__btn:hover{
+	box-shadow: inset 6px 6px 0px #aeaeae,inset -6px -6px 0px #aeaeae;
+	
+}
 .btn_text{
 	font-family: 'Consolas';
 	font-style: normal;
@@ -317,8 +331,87 @@ flex-direction: column;
 	font-weight: 400;
 	font-size: 25px;
 	line-height: 29px;
-	margin: 30px 33px 106px 33px;
+	margin: 30px 33px 55px 33px;
 
 	color: #000000;
 
+}
+.brief_btn{
+	display:flex;
+	flex-direction: row;
+}
+.brief_yes_text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 75px;
+	background-color: #000000;
+	border-radius: 0px 0px 0px 5px;
+		
+}
+.brief_no_text{
+	display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 75px;
+		background-color: #000000;
+		border-radius: 0px 0px 5px 0px;
+}
+.brief_btn a{
+	font-family: 'Consolas';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 29px;
+
+	color: #FFFFFF;
+}
+.brief_btn a:hover {
+
+	color: #bdbdbd;
+}
+.footer{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	top: 2070px;
+	height: 200px;
+	background-color: #000000;
+
+}
+.footer__item{
+	display: flex;
+	justify-content: center;
+}
+.footer_item_text{
+	margin-top: 20px;
+}
+.footer_text{
+	color: #FFFFFF;
+}
+p.footer_text{
+	font-weight: 300;
+	font-size: 20px;
+}
+p.footer_text span{
+	font-weight: normal;
+	
+}
+.footer_telegram{
+		margin-top: 37px;
+}
+.footer_icon_telegram{
+	width: 36px;
+	height: 36px;
+}
+.footer_item_contact{
+	gap: 60px;
+	color: #424242;
+	margin-top: 37px;
+	font-size: 16px;
+	display: flex;
+	flex-direction: row;
 }

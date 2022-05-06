@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Fedor_Dergachev | Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/slash.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="nav">
                 <ul class="menu">
-                    <div class="home"><li><a href="#" class="home">Home</a></li><div class="underline"></div></div>
-                    <li><a href="#" class="about">About me</a></li>
-                    <li><a href="#" class="portfolio">Portfolio</a></li>
-                    <li><a href="#" class="brief">Brief</a></li>
+                    <div class="home"><li><a href="#" class="menu__item menu_item_home">Home</a></li><div class="underline"></div></div>
+                    <li><a href="#aboutemeid" class="menu__item menu_item_about">About me</a></li>
+                    <li><a href="#" class="menu__item menu_item_portfolio">Portfolio</a></li>
+                    <li><a href="#" class="menu__item menu_item_brief">Brief</a></li>
                 </ul>
             </div>
         </div>
@@ -31,9 +32,7 @@
                 <h1 class="title">Fedor_Dergachev</h1>
                 <p class="subtitle">Web desiner, front end developer,<br>
                 graphic designer.</p>
-                <div class="homepage_item contactbtn">
-                <a href="#" class="contactbtn">[Contact]</a>
-                </div>
+                <a href="#contactid" class="contactbtn">[Contact]</a>
             </div>
         </div>
     </section>
@@ -58,7 +57,7 @@
             <div class="bulets__item bulets_item_right"></div>
         </div>
     </div>
-    <section class="abouteme">
+    <section id="aboutemeid" class="abouteme">
         <div class="container">
             <div class="abouteme">
                 <img src="../img/arrow.png" alt="scroll"class="abouteme__item adoutme_item_arrow">
@@ -75,7 +74,7 @@
                     <div class="contact__text">
                         <p class="contact__text__item contact_text_subtitle ">I am engaged in the development of logos, corporate identity, banners, as well as UI/UX design and web sites
                         development. I will be glad to receive an order from you.</p>
-                        <h1 class="contact__text__item contact_text_title ">Contact me</h1>
+                        <h1 id="contactid" class="contact__text__item contact_text_title ">Contact me</h1>
                         <p class="contact__text__item contact_text_subtitle ">You can fill in the brief or leave your proposal here.
                         </p>
                     </div>
@@ -103,19 +102,34 @@
                         <br>
                         <br>
                         C:\User>
-                        </p>            
+                        </p>
+                        <div class="brief_btn">
+                                <a href="#" class="brief_yes_text">
+                                    Yes
+                                </a>
+                                <a href="#" class="brief_no_text">
+                                    No
+                                </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <saction class="contact">
-        
-    </saction>
-
     <footer class="footer">
-        <div class="container">
-
+        <div class="container"> 
+            <div class="footer__item footer_item_text"><p class="footer_text"><span>My speciality: </span>banners, logo designe, UI/UX designe, front end dev.</p></div>
+        </div>
+        <div class="footer__item footer_telegram">
+            <a href="https://t.me/fedia_dergachev" target="_blank" class=" ">
+                <img src="../img/Telegram.png" alt="Telegram" class="footer_icon_telegram">
+            </a>
+        </div>
+        <div class="footer__item footer_item_contact">
+            <p class="contact_text">&copy; Fedor Dergachev, 2022</p>
+            <p class="contact_text">+38(068)202-38-76</p>
+            <p class="contact_text">fdeordergachev@gmail.com</p>
+            <p class="contact_text">Odessa, Marselska st.</p>
         </div>
     </footer>
 </body>
