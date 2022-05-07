@@ -64,21 +64,33 @@ header li a{
 	font-size: 25px;
 	font-weight: 300;
 }
+header li a:hover {
+	font-size: 25px;
+	font-weight: 300;
+	color: #767676;
+}
 .menu li{
 	margin-right: 50px;
 }
 .nav{
 	display: flex;
 	align-items: center;
-	margin: 40px 0px 0px 736px ;
-	
+	margin: 40px 0px 0px 736px ;	
 }
-.menu_item_home {
+.menu_item_underluned {
 	font-weight: 400;
 }
 
 div.underline{
 	width: 66px;
+	height: 0px;
+	border: 1.5px solid;
+	border-radius: 100px;
+	background-color: #000000;
+	margin-top: 4px;
+}
+.underline_long {
+	width:99px;
 	height: 0px;
 	border: 1.5px solid;
 	border-radius: 100px;
