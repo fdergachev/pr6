@@ -167,7 +167,102 @@ a.contactbtn:hover{
 	bottom: -1px;
 	transition: left 0.1s,bottom 0.1s;
 }
-div.cards{
+
+/* slider */
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+
+
+.slider_image{
+	height: inherit;
+		box-shadow: -8px 8px 4px rgba(0, 0, 0, 0.08);
+}
+
+.slider__item{
+	text-align: center;
+}
+
+.slider{
+	margin-top: 174px;
+	margin-left: -50px;
+	position: relative;
+	width: 856px;
+}
+/* Слайд */
+.slick-slide {
+		width: 288px;
+		height: 172px;
+}
+/* Слайд по центру */
+.slick-slide.slick-active {
+		width: 560px;
+		height: 335px;
+		margin: 0 -140px;
+		z-index: 3;
+}
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: center;
+	height: 355px;
+}
+/* Стрелка */
+.slick-arrow {
+	opacity: 0;
+	width: 50%;
+	height: 335px;
+	position: absolute;
+	z-index: 1;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+	left:0;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+	
+	top:0;
+	right: 0;
+}
+/* Точки (булиты) */
+.slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slick-dots li {
+	list-style: none;
+	margin: 0px 20px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+	font-size: 0;
+	width: 40px;
+	height: 10px;
+	background: rgba(255, 255, 255);
+	border-radius: 100px;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+	margin-top:20px;
+	font-size: 0;
+	width: 40px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 100px;
+}
+
+/*
+div.cards {
+	position: relative;
 	margin-top: 174px;
 	margin-left: -50px;
 	display: flex;
@@ -224,7 +319,7 @@ div.bulets{
 	background: rgba(255, 255, 255, 0.6);
 	border-radius: 100px;
 }
-
+*/
 
 
 
